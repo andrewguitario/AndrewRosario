@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet')
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0px;
+}
+
+body {
+  /* font-family: 'mulish', sans-serif; */
+  font-family: 'Epilogue', sans-serif;
+  color: #fff;
+  background: #000;
+  line-height: 1.2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rock Salt', cursive;
+  margin: 0;
+}
+
+.headers {
+  color: #de33bc;
+}
+
+.section-headers {
+  text-align: center;
+}
+
+
+/* -- NavBar-- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #000;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin-bottom: 0 5px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 30px;
+  margin: 0px 5px;
+}
+
+.navbar ul li a:hover, .navbar ul li a.current {
+  color: #de33bc;
+  border-bottom: 2px solid #de33bc;
+}
+
+.navbar h1 {
+  font-family: 'Rock Salt', cursive;
+  margin: 0;
+  padding: 0;
+}
+.navbar .logo {
+  padding: 0 0 10px;
+ }
+
+.navbar .fas.fa-guitar {
+  color: #de33bc;
+}
+
+.hero {
+  background: url('../images/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+/* --Bio-- */
+
+.bio-text {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  padding: 0 200px;
+  padding-top: 40px;
+}
+
+/* --Media Icon Menu-- */
+
+.media-menu {
+  padding-top: 150px;
+
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.icons a {
+  padding: 30px 0;
+  color: #de33bc;
+}
+
+.icons a:hover {
+  border-top: 2px solid #de33bc;
+  border-bottom: 2px solid #de33bc;
+}
+
+/* -- Video-- */
+.video-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  margin: 20px;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* .video-container {
+  padding: 40px; 
+} 
+
+.video-container iframe{ 
+  display: flex;
+  padd
+  z-index: 0;
+}  */
+
+/* --Audio-- */
+
+.audio i {
+  color: #de33bc;
+}
+
+
+/* --Photos-- */
+.photos {
+  padding-bottom: 100px;
+}
+.photo-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px 0;
+} 
+
+.photo-grid .photo img{
+  height: 300px;
+  border: 1px dotted #de33bc;
+}
+
+.photo-grid .photo img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 3px solid #de33bc;
+}
+
+/* --teaching-- */
+.education {
+background: url('../images/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
+height: 80vh;
+max-width: 100%;
+position: relative;
+padding: 150px 100px 20px 30px;
+}
+
+.education .content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 100%; 
+}
+
+.education .content h1{
+  font-size: 70px;
+} 
+
+.education .content p {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 400;
+  color: #f4f4f4;
+  max-width: 750px;
+}
+
+.education .content a {
+  color: #fff;
+  font-size: 28px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.education .content a:hover {
+  border: 2px solid #de33bc;
+  color: #de33bc;
+}
+
+/* --Contact Form-- */
+
+.form-column form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form{
+  background: #f4f4f4;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 4px;
+}
+  .form-column {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-form input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #de33bc;
+  border-radius: 4px;
+} 
+
+.contact-form .form-control label {
+  display: flex;
+  color: #de33bc;
+  padding: 5px;
+}
+.contact-form .form-control textarea {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;  
+  border: 2px solid #de33bc;
+  border-radius: 4px;
+}
+
+.contact-form .btn {
+  cursor: pointer;
+  color: #de33bc;
+  background: #f4f4f4;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+
+
+.contact-form .btn:hover {
+  border: 2px solid #f576db;
+  color: #f576db;
+}
+
+/* --Footer-- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer .social-icons i{
+  color: #de33bc;
+  padding-top: 30px;
+}
+
+.footer .social-icons a {
+  padding: 10px;
+}
+
+.footer .social-icons a:hover {
+  border-bottom: 1px solid #de33bc;
+}
+
+.footer .copyright {
+  display: inline;
+  padding-top: 10px;
+}
+
+/* -- Universal Section Padding-- */
+.section-padding {
+  padding-top: 100px;
+}
+
+
+@media(min-width: 501px) and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background: #000;
+    top: 0;
+    max-width: 100%;
+    height: 110px;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar li {
+    font-size: 1rem;
+    padding: 5px 0;
+    padding-right: 60px;
+    margin-bottom: 0;
+  }
+  
+  .navbar a {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .navbar ul li a:hover, .navbar ul li a.current {
+    color: #de33bc;
+    border-bottom: 2px solid #de33bc;
+  }
+  
+  .navbar h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 23px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .navbar .logo {
+    padding: 0;
+   }
+  
+  .navbar .fas.fa-guitar {
+    display: none;
+  }
+
+.hero {
+  background: url('../images/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.bio {
+  padding-left: 10px;
+  padding-right: 30px;
+ }
+
+.bio-text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+ }
+
+}
+
+/* _______SMART PHONES______________ */
+@media(max-width: 500px) {
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #000;
+    top: 0;
+    max-width: 100%;
+    height: 70px;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar li {
+    font-size: 1em;
+    padding: 10px 0;
+    padding-right: 60px;
+    margin-bottom: 0;
+  }
+  
+  .navbar a {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .navbar ul li a:hover, .navbar ul li a.current {
+    color: #de33bc;
+    border-bottom: 2px solid #de33bc;
+  }
+  
+  .navbar h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 23px;
+    margin-top: 15px;
+    padding-top: 5px;
+  }
+  .navbar .logo {
+    padding: 0;
+   }
+  
+  .navbar .fas.fa-guitar {
+    display: none;
+    color: #de33bc;
+  }
+
+.hero {
+  background: url('../images/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+/* --Bio MOBILE-- */
+
+.bio {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.bio-text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  padding: 10px;
+  max-width: 100%;
+}
+
+/* media menu mobile */
+.media-menu {
+  padding-top: 100px;
+
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icons a {
+  padding: 30px 0;
+  color: #de33bc;
+}
+
+.icons a:hover {
+  border-top: 2px solid #de33bc;
+  border-bottom: 2px solid #de33bc;
+}
+
+
+/* --Photos MOBILE-- */
+.photos {
+  padding-bottom: 50px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+} 
+
+.photo-grid .photo img{
+  height: 300px;
+  border: 1px dotted #de33bc;
+  margin-top: 10px;
+}
+
+.photo-grid .photo img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 3px solid #de33bc;
+}
+
+/* --teaching MOBILE-- */
+.education {
+  background: url('../images/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
+  height: 80vh;
+  max-width: 100%;
+  position: relative;
+  padding: 150px 100px 40px 20px;
+}
+  
+  .education .content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    padding-right: 30px;
+ }
+  
+  .education .content h1{
+    font-size: 40px;
+  } 
+  
+  .education .content p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #f4f4f4;
+    max-width: 750px;
+  }
+  
+  .education .content a {
+    color: #fff;
+    font-size: 23px;
+    padding-top: 5px;
+    padding-left: 35px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 180px;
+  }
+  
+  .education .content a:hover {
+    border: 2px solid #de33bc;
+    color: #de33bc;
+  }
+
+  /* --Contact Form MOBILE-- */
+
+
+.contact-form {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 4px;
+ }
+  .form-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+ }
+
+.contact-form input {
+  display: flex;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #de33bc;
+  border-radius: 4px;
+  max-width: 100%;
+ } 
+
+.contact-form .form-control label {
+  display: flex;
+  color: #de33bc;
+  padding: 5px;
+ }
+.contact-form .form-control textarea {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;  
+  border: 2px solid #de33bc;
+  border-radius: 4px;
+  max-width: 100%;
+  }
+
+.contact-form .btn {
+  display: flex;
+  cursor: pointer;
+  color: #de33bc;
+  background: #f4f4f4;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.contact-form .btn:hover {
+  border: 2px solid #f576db;
+  color: #f576db;
+ }
+
+/* --Footer MOBILE-- */
+
+.footer .copyright {
+  display: block;
+  font-size: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+ }
+
+}
