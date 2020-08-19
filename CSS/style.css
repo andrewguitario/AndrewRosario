@@ -86,25 +86,22 @@ h1, h2, h3, h4 {
   color: #fff;
   padding: 0 10px;
   margin: 0px 0px;
+  border-bottom: 2px transparent #fff;
   transition: all var(--fade-speed) ease-in-out;
 }
 
 
-.navbar ul li ul {
-  display: none; 
-  
-}
 
-.navbar ul li:hover,
 .navbar ul li a:hover {
   cursor: pointer;
   color: #de33bc;
   border-bottom: 1px solid var(--primary-color);
 }
 
-.navbar ul li a:hover {
-  color: #de33bc;
-}
+/* DROP DOWN MENU */
+  .navbar ul li ul {
+    display: none;    
+  }
 
 .navbar ul li:hover ul {
   display: block;
