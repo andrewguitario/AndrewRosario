@@ -47,26 +47,37 @@ h1, h2, h3, h4 {
 
 .navbar {
   display: flex;
-  align-items: center;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   background: #000;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 80px;
   opacity: 0.9;
   position: fixed;
   z-index: 1;
 }
 
+.navbar .logo {
+  margin-top: 30px;
+  margin-left: 10px;
+ }
+
+ .navbar .logo img{
+  height: 40%;
+  width: 40%;
+}
+
 .navbar ul {
   display: flex;
+  margin-top: 5px;
 }
 
 .navbar li {
   font-size: 1.2em;
-  padding: 10px 10px;
-  margin-bottom: 0 5px;
+  /* padding: 10px 10px; */
+  margin: 5px;
 }
 
 .navbar a {
@@ -77,32 +88,16 @@ h1, h2, h3, h4 {
   transition: all 0.5s ease-in;
 }
 
-.navbar ul li a:hover, .navbar ul li a.current {
+.navbar ul li a:hover {
   color: #de33bc;
   border-bottom: 2px solid #de33bc;
 }
 
-.navbar h1 {
-  font-family: 'Rock Salt', cursive;
-  margin: 0;
-  padding: 0;
-}
+/* .navbar .drop-down {
+  display: block;
+  opacity: 0;
+} */
 
-.navbar .logo {
-  margin-top: 80px;
-  margin-left: 5px;
- }
-
- .navbar .logo img{
-  height: 40%;
-  width: 40%;
-}
-
- 
-
-.navbar .fas.fa-guitar {
-  color: #de33bc;
-}
 
 .hero {
   background: url('../img/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
@@ -115,7 +110,7 @@ h1, h2, h3, h4 {
 /* --Bio-- */
 
 .bio-text {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 300;
   text-align: left;
   padding: 0 200px;
