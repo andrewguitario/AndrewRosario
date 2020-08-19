@@ -70,34 +70,52 @@ h1, h2, h3, h4 {
 }
 
 .navbar ul {
-  display: flex;
+  display: inline-block;
   margin-top: 5px;
 }
 
-.navbar li {
+.navbar ul li {
+  display: inline-block;
+  position: relative;
   font-size: 1.2em;
   /* padding: 10px 10px; */
   margin: 5px;
 }
 
-.navbar a {
+.navbar ul li a {
   color: #fff;
   padding: 10px 10px;
   margin: 0px 5px;
-  border-bottom: 2px transparent;
-  transition: all 0.5s ease-in;
+
 }
 
 .navbar ul li a:hover {
   color: #de33bc;
-  border-bottom: 2px solid #de33bc;
+  
 }
 
-/* .navbar .drop-down {
-  display: block;
-  opacity: 0;
-} */
+.navbar ul li ul {
+  display: none; 
+}
 
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #de33bc;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  margin-top: 25px;
+}
+
+.navbar ul li:hover ul li {
+  display: block;
+}
+
+ 
+/* Hero Image */
 
 .hero {
   background: url('../img/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
