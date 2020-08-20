@@ -40,7 +40,6 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-
 /* -- NavBar-- */
 
 .navbar {
@@ -66,6 +65,7 @@ h1, h2, h3, h4 {
   height: 40%;
   width: 40%;
   margin-top: 10px;
+  padding-left: 10px;
 }
 
 .navbar .menu {
@@ -78,7 +78,7 @@ h1, h2, h3, h4 {
   position: relative;
   font-size: 1.5rem;
   margin-right: 5px;
-  border-bottom: 2px transparent #fff;
+  border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
 }
 
@@ -86,10 +86,9 @@ h1, h2, h3, h4 {
   color: #fff;
   padding: 0 10px;
   margin: 0px 0px;
-  border-bottom: 2px transparent #fff;
+  border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
 }
-
 
 
 .navbar ul li a:hover {
@@ -97,6 +96,11 @@ h1, h2, h3, h4 {
   color: #de33bc;
   border-bottom: 1px solid var(--primary-color);
 }
+
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #de33bc;
+} 
 
 /* DROP DOWN MENU */
   .navbar ul li ul {
@@ -106,7 +110,7 @@ h1, h2, h3, h4 {
 .navbar ul li:hover ul {
   display: block;
   position: absolute;
-  left: 0;
+  float: left;
   background-color: #000;
   padding-top: 7px;
 }
@@ -116,7 +120,7 @@ h1, h2, h3, h4 {
   float: left;
   text-align: center; 
   padding: 4px;
-  border-bottom: 2px transparent #fff;
+  border-bottom: 2px transparent;
 }
 
 /* Hero Image */
@@ -155,15 +159,15 @@ h1, h2, h3, h4 {
 
 .icons a {
   padding: 30px 0;
-  color: #de33bc;
+  color: var(--primary-color);
   border-top: 2px transparent;
   border-bottom: 2px transparent;
   transition: border 0.5s ease-in;
 }
 
 .icons a:hover {
-  border-top: 2px solid #de33bc;
-  border-bottom: 2px solid #de33bc;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* -- Video-- */
@@ -228,7 +232,7 @@ h1, h2, h3, h4 {
 .photo-grid .photo img:hover{
   cursor: pointer;
   opacity: 0.8;
-  border-bottom: 3px solid #de33bc;
+  border-bottom: 1px solid #de33bc;
 }
 
 /* --teaching-- */
@@ -269,6 +273,7 @@ padding: 150px 100px 20px 30px;
   border: 2px solid #fff;
   border-radius: 5px;
   width: 180px;
+  transition: all var(--fade-speed) ease-in-out;
 }
 
 .education .content a:hover {
@@ -663,6 +668,7 @@ padding: 150px 100px 20px 30px;
   background: #f4f4f4;
   font-size: 16px;
   border-radius: 4px;
+  border: 2px transparent;
   padding: 5px;
   margin-top: 15px;
   margin-bottom: 0;
