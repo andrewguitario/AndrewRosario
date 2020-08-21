@@ -38,6 +38,8 @@ h1, h2, h3, h4 {
 
 .section-headers {
   text-align: center;
+  padding: 2px;
+  margin: 20px;
 }
 
 /* this is used in several Sections */
@@ -51,6 +53,7 @@ h1, h2, h3, h4 {
 .section-padding {
   padding-top: 100px;
 }
+
 /* -- NavBar-- */
 
 .navbar {
@@ -144,7 +147,7 @@ h1, h2, h3, h4 {
   color: #fff;
 }
 
-/* --Bio-- */
+/* --Bio/about-- */
 
 .bio-text {
   font-size: 1.2rem;
@@ -306,30 +309,35 @@ padding: 150px 100px 20px 30px;
   'subject phone'
   'message message';
   grid-gap: 1.2rem;
+  margin-top: 20px;
 }
 
 .name-input {grid-area: name;}
 .subject-input {grid-area: subject;}
 .email-input {grid-area: email;}
 .phone-input {grid-area: phone;}
-.message-input {grid-area: message;}
-
-#contact .text-input {
-  padding: 5px;
+.message-input {
+  grid-area: message;
+  height: 200px;
 }
 
+#contact .text-input {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 1.2rem;
+  padding: 6px;
+  border-radius: 3px;
+}
 
-
-
-.contact-form .btn {
+#contact .btn {
   cursor: pointer;
   color: var(--primary-color);
   background: #f4f4f4;
-  font-size: 16px;
-  border-radius: 4px;
-  padding: 5px;
-  margin-top: 15px;
-  margin-bottom: 0;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  padding: 10px;
+  margin: auto;
+  width: 30%;
+
 }
 
 .contact-form .btn:hover {
