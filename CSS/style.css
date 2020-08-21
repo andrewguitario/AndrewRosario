@@ -283,37 +283,28 @@ padding: 150px 100px 20px 30px;
 
 /* --Contact Form-- */
 
-.form-column form {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.contact-form{
+.contact-form {
   background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
   margin-top: 80px;
   border-radius: 4px;
 }
-  .form-column {
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  flex: 1;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
+  .contact-form {
+  display: grid;
+  grid-template-areas:
+  'name subject'
+  'email phone'
+  'message message';
 }
 
 .contact-form input {
   padding: 10px;
   font-size: 18px;
-  border: 2px solid #de33bc;
+  border: 1px solid #de33bc;
   border-radius: 4px;
 } 
 
-.contact-form .form-control label {
-  display: flex;
-  color: #de33bc;
-  padding: 5px;
-}
 .contact-form .form-control textarea {
   font-family: 'Epilogue', sans-serif;
   font-size: 18px;  
@@ -332,14 +323,13 @@ padding: 150px 100px 20px 30px;
   margin-bottom: 0;
 }
 
-
-
 .contact-form .btn:hover {
   border: 2px solid #f576db;
   color: #f576db;
 }
 
 /* --Footer-- */
+
 .footer {
   display: flex;
   flex-direction: column;
