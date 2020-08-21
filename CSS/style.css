@@ -291,11 +291,11 @@ padding: 150px 100px 20px 30px;
   border-radius: 4px;
 }
 
-.name {grid-area: name;}
-.subject {grid-area: subject;}
-.email {grid-area: email;}
-.phone {grid-area: phone;}
-.message {grid-area: message;}
+.name-input {grid-area: name;}
+.subject-input {grid-area: subject;}
+.email-input {grid-area: email;}
+.phone-input {grid-area: phone;}
+.message-input {grid-area: message;}
 
   .contact-form{
   display: grid;
@@ -306,18 +306,8 @@ padding: 150px 100px 20px 30px;
   grid-gap: 1rem;
 }
 
-.form-control input {
-  font-size: 1.2rem;
-  height: 30px;
-  width: 300px;
-}
 
-.form-control textarea {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 1rem;
-  height: 100px;
-  width: 900px;
-}
+
 
 .contact-form .btn {
   cursor: pointer;
