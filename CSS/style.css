@@ -285,36 +285,33 @@ padding: 150px 100px 20px 30px;
 
 .contact-form {
   background: #f4f4f4;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Epilogue', sans-serif;
   padding: 20px;
   margin-top: 80px;
   border-radius: 4px;
 }
-  .contact-form {
+
+.name {
+  grid-area: name;
+  width: 400px;
+}
+.subject {grid-area: subject;}
+.email {grid-area: email;}
+.phone {grid-area: phone;}
+.message {grid-area: message;}
+
+  .contact-form{
   display: grid;
   grid-template-areas:
-  'name subject'
-  'email phone'
-  'message message';
-}
-
-.contact-form input {
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #de33bc;
-  border-radius: 4px;
-} 
-
-.contact-form .form-control textarea {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 18px;  
-  border: 2px solid #de33bc;
-  border-radius: 4px;
+  'name name subject subject'
+  'email email phone phone'
+  'message message message message';
+  grid-gap: 2rem;
 }
 
 .contact-form .btn {
   cursor: pointer;
-  color: #de33bc;
+  color: var(--primary-color);
   background: #f4f4f4;
   font-size: 16px;
   border-radius: 4px;
