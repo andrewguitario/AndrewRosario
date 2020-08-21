@@ -40,6 +40,17 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
+/* this is used in several Sections */
+.container {
+  padding:0 4rem;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-padding {
+  padding-top: 100px;
+}
 /* -- NavBar-- */
 
 .navbar {
@@ -58,14 +69,14 @@ h1, h2, h3, h4 {
 
 .navbar .logo {
   width: 50%;
-  padding-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
  }
 
  .navbar .logo img{
-  height: 40%;
-  width: 40%;
-  margin-top: 10px;
-  padding-left: 10px;
+  height: 50%;
+  width: 50%;
+  margin-top: 12px;
 }
 
 .navbar .menu {
@@ -282,13 +293,19 @@ padding: 150px 100px 20px 30px;
 }
 
 /* --Contact Form-- */
+.container {
+  padding:0 4rem;
+  margin: auto;
+  overflow: hidden;
+}
 
-.contact-form-grid {
-  background: #f4f4f4;
-  font-family: 'Epilogue', sans-serif;
-  padding: 20px;
-  margin-top: 80px;
-  border-radius: 4px;
+#contact .text-fields {
+  display: grid;
+  grid-template-areas:
+  'name email'
+  'subject phone'
+  'message message';
+  grid-gap: 1.2rem;
 }
 
 .name-input {grid-area: name;}
@@ -297,13 +314,8 @@ padding: 150px 100px 20px 30px;
 .phone-input {grid-area: phone;}
 .message-input {grid-area: message;}
 
-  .contact-form{
-  display: grid;
-  grid-template-areas:
-  'name name subject subject'
-  'email email phone phone'
-  'message message message message';
-  grid-gap: 1rem;
+#contact .text-input {
+  padding: 5px;
 }
 
 
@@ -353,10 +365,6 @@ padding: 150px 100px 20px 30px;
   padding-top: 10px;
 }
 
-/* -- Universal Section Padding-- */
-.section-padding {
-  padding-top: 100px;
-}
 
 
 @media(min-width: 501px) and (max-width: 1024px) {
