@@ -252,7 +252,7 @@ h1, h2, h3, h4 {
 /* --teaching-- */
 .education {
 background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
-height: 80vh;
+height: 100vh;
 max-width: 100%;
 position: relative;
 padding: 150px 100px 20px 30px;
@@ -268,12 +268,12 @@ padding: 150px 100px 20px 30px;
 }
 
 .education .content h1{
-  font-size: 70px;
+  font-size: 2rem ;
 } 
 
 .education .content p {
   text-align: left;
-  font-size: 23px;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #f4f4f4;
   max-width: 750px;
@@ -310,6 +310,7 @@ padding: 150px 100px 20px 30px;
   'message message';
   grid-gap: 1.2rem;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .name-input {grid-area: name;}
