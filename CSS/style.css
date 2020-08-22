@@ -37,9 +37,8 @@ h1, h2, h3, h4 {
 }
 
 .section-headers {
-  text-align: center;
   padding: 2px;
-  margin: 20px;
+  margin: auto;
 }
 
 /* this is used in several Sections */
@@ -175,19 +174,16 @@ h1, h2, h3, h4 {
 }
 
 #media .icons {
-  padding: 2rem 0;
+  padding: 1rem;
   text-align: center;
+  border: 2px transparent;
+  transition: border var(--fade-speed) ease-in-out;
 }
 #media .icons a {
   color: var(--primary-color);
-  padding-top: 4rem;
-  padding-bottom: 1rem;
-  border-top: 2px solid #fff;
-  border-bottom: 2px transparent;
-  transition: border 0.5s ease-in;
 }
 
-#media .icons a:hover {
+#media .icons:hover {
   cursor: pointer;
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
