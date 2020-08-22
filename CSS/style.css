@@ -356,6 +356,7 @@ padding: 150px 100px 20px 30px;
 
 /* --Footer-- */
 
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -364,13 +365,13 @@ padding: 150px 100px 20px 30px;
   text-align: center;
 }
 
-.footer .social-icons i{
-  color: #de33bc;
-  padding-top: 30px;
-}
+.footer .social-icons {
+  margin-bottom: 2rem;
+} 
 
 .footer .social-icons a {
-  padding: 10px;
+  color: var(--primary-color);
+  padding: 1rem;
 }
 
 .footer .social-icons a:hover {
@@ -380,6 +381,10 @@ padding: 150px 100px 20px 30px;
 .footer .copyright {
   display: inline;
   padding-top: 10px;
+}
+
+#footer .bottom-text {
+  padding-bottom: 2rem;
 }
 
 
