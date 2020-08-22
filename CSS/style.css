@@ -72,14 +72,13 @@ h1, h2, h3, h4 {
 
 .navbar .logo {
   width: 50%;
-  padding-top: 10px;
+  margin-top: 30px;
   padding-left: 10px;
  }
 
  .navbar .logo img{
-  height: 50%;
-  width: 50%;
-  margin-top: 12px;
+  height: 45%;
+  width: 45%;
 }
 
 .navbar .menu {
@@ -107,13 +106,13 @@ h1, h2, h3, h4 {
 
 .navbar ul li a:hover {
   cursor: pointer;
-  color: #de33bc;
+  color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar ul li:hover {
   cursor: pointer;
-  color: #de33bc;
+  color: var(--primary-color);
 } 
 
 /* DROP DOWN MENU */
@@ -221,7 +220,7 @@ h1, h2, h3, h4 {
 /* --Audio-- */
 
 .audio i {
-  color: #de33bc;
+  color: var(--primary-color);
 }
 
 
@@ -240,16 +239,17 @@ h1, h2, h3, h4 {
 
 .photo-grid .photo img{
   height: 300px;
-  border: 1px dotted #de33bc;
+  border: 1px dotted var(--primary-color);
 }
 
 .photo-grid .photo img:hover{
   cursor: pointer;
   opacity: 0.8;
-  border-bottom: 1px solid #de33bc;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 /* --teaching-- */
+
 .education {
 background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
 height: 100vh;
@@ -268,7 +268,7 @@ padding: 150px 100px 20px 30px;
 }
 
 .education .content h1{
-  font-size: 2rem ;
+  font-size: 2.2rem ;
 } 
 
 .education .content p {
@@ -291,13 +291,13 @@ padding: 150px 100px 20px 30px;
 }
 
 .education .content a:hover {
-  border: 2px solid #de33bc;
-  color: #de33bc;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* --Contact Form-- */
 .container {
-  padding:0 4rem;
+  padding:0 7rem;
   margin: auto;
   overflow: hidden;
 }
@@ -338,7 +338,6 @@ padding: 150px 100px 20px 30px;
   padding: 10px;
   margin: auto;
   width: 30%;
-
 }
 
 .contact-form .btn:hover {
