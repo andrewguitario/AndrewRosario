@@ -116,6 +116,11 @@ h1, h2, h3, h4 {
   color: var(--primary-color);
 } 
 
+.navbar .current {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
 /* DROP DOWN MENU */
   .navbar ul li ul {
     display: none;    
@@ -146,6 +151,10 @@ h1, h2, h3, h4 {
   max-width: 100%;
   position: relative;
   color: #fff;
+}
+
+#home .showcase-text {
+  z-index: 2;
 }
 
 /* --Bio/about-- */
@@ -375,16 +384,11 @@ padding: 150px 100px 20px 30px;
 }
 
 .footer .social-icons a:hover {
-  border-bottom: 1px solid #de33bc;
-}
-
-.footer .copyright {
-  display: inline;
-  padding-top: 10px;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 #footer .bottom-text {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 
