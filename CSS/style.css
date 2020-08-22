@@ -126,6 +126,7 @@ h1, h2, h3, h4 {
   position: absolute;
   float: left;
   background-color: #000;
+  opacity: 0.9;
   padding-top: 7px;
 }
 
@@ -217,28 +218,27 @@ h1, h2, h3, h4 {
 }
 
 /* --Audio-- */
-
-.audio i {
+#audio .audio-container {
+  position: relative;
+  text-align: center;
+  height: 90vh;
+  padding: 1rem;
+}
+#audio i {
   color: var(--primary-color);
+  margin-top: 25vh;
 }
 
 
 /* --Photos-- */
-#photos .photos-section {
-  top: 200px;
-  border: 1px #fff solid;
-  margin-top: 7rem;
-}
 
 #photos .photo-container {
-  border: 1px #fff solid;
   position: relative;
   height: 90vh;
   padding: 1rem;
 }
 
 #photos .photo-grid {
-  border: 1px #fff solid;
   position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
