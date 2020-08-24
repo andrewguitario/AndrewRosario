@@ -72,7 +72,7 @@ h1, h2 {
   width: 100%;
   height: 70px;
   opacity: 0.9;
-  z-index: 1;
+  z-index: 4;
 }
 
 .navbar .logo {
@@ -197,41 +197,46 @@ h1, h2 {
 
 /* --teaching-- */
 
-.education {
+#education .education-container {
   position: relative;
   background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
   height: 100vh;
   width: 100%;
   }
 
-.education::before {
+/* .education-container::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
   }
-  
-  .education .content {
-    position: relative;
+   */
+  .education-container .content {
+    position: absolute;
     text-align: center;
-    padding: 0;
-    width: 100%;
+    left:25%;
+    top: 150px;
+    height:100%;
+    width: 70%;
+    z-index: 2;
   }
   
-  .education .content h1{
+  .education-container .content h1{
+    text-align: center;
     font-size: 3rem;
     color: var(--font-color);
-    /* text-shadow: 
-    /* -1px -1px 0 #191919,
+    text-shadow: 
+    -1px -1px 0 #191919,
     1px -1px 0  #191919,
     -1px 1px 0  #191919,
-    1px 1px 0  #191919; */ */
+    1px 1px 0  #191919;
   } 
   
-  .education .content p {
+  .education-container .content p {
+    text-align: left;
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--font-color);
@@ -242,7 +247,7 @@ h1, h2 {
       1px 1px 0 #000; */
   }
   
-  .education .content a {
+  .education-container .content a {
     text-align: center;
     color: var(--primary-color);
     font-size: 1.5rem;
@@ -250,13 +255,30 @@ h1, h2 {
     padding: 10px 4px 4px 4px;
     border: 2px transparent;
     width: 200px;
+    text-shadow: 
+    -1px -1px 0 #191919,
+    1px -1px 0  #191919,
+    -1px 1px 0  #191919,
+    1px 1px 0  #191919;
     transition: all var(--fade-speed) ease-in-out;
   }
   
-  .education .content a:hover {
+  .education-container .content a:hover {
     color: var(--medium-color);
     border-bottom: 2px solid var(--primary-color);
   }
+
+  .education-container .overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+
 
 /* --Contact Form-- */
 
