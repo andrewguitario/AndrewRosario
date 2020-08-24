@@ -197,58 +197,49 @@ h1, h2 {
 
 /* --teaching-- */
 
-#education .education {
+.education {
   position: relative;
   background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
   height: 100vh;
   width: 100%;
-  padding: 1rem;
   }
 
-  #education .education::before {
+.education::before {
     content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
   }
   
   .education .content {
     position: relative;
-    text-align: left;
-    padding: 10px 40px;
-    left: 250px;
-    top: 150px;
-    width: 850px;
+    text-align: center;
+    padding: 0;
+    width: 100%;
   }
   
   .education .content h1{
     font-size: 3rem;
     color: var(--font-color);
-    text-shadow: 
-    -1px -1px 0 #191919,
+    /* text-shadow: 
+    /* -1px -1px 0 #191919,
     1px -1px 0  #191919,
     -1px 1px 0  #191919,
-    1px 1px 0  #191919;
+    1px 1px 0  #191919; */ */
   } 
   
-  .education .content .blurb {
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--font-color);
-    max-width: 850px;
-  }
-
   .education .content p {
-    color: #f4f4f4;
-    text-shadow:
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--font-color);
+    /* text-shadow:
       -1px -1px 0 #000,
       1px -1px 0 #000,
       -1px 1px 0 #000,
-      1px 1px 0 #000;
+      1px 1px 0 #000; */
   }
   
   .education .content a {
@@ -256,7 +247,7 @@ h1, h2 {
     color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 4px;
+    padding: 10px 4px 4px 4px;
     border: 2px transparent;
     width: 200px;
     transition: all var(--fade-speed) ease-in-out;
