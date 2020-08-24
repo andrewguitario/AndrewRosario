@@ -179,7 +179,7 @@ h1, h2, h3, h4 {
     float:right;
     text-align: left;
     padding: 15px;
-    margin-top: 250px;
+    margin-top: 240px;
   }
   
   .education .content h1{
@@ -193,7 +193,11 @@ h1, h2, h3, h4 {
     color: #fff;
     max-width: 850px;
     margin: 15px 0;
-    
+  }
+
+  .education .content .blurb p {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
   }
   
   .education .content a {
@@ -313,10 +317,13 @@ h1, h2, h3, h4 {
 }
 
 /* --Contact Form-- */
+
+#contact {
+  margin-bottom: 20px;
+}
 .contact-container {
   padding: 1rem 7rem;
   margin: auto;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -351,23 +358,28 @@ h1, h2, h3, h4 {
   border-radius: 3px;
 }
 
-.contact-container .btn {
+#contact .submit-btn {
   cursor: pointer;
+  background: transparent;
+  border: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 3px;
   color: var(--primary-color);
   font-size: 1.3rem;
-  border-radius: 3px;
-  padding: 10px;
   margin: auto;
+  padding: 10px;
   width: 30%;
 }
 
-.contact-container .btn:hover {
-  border: 2px solid #f576db;
-  color: #f576db;
+#contact .submit-btn:hover {
+  border: 2px solid #f4f4f4;
+  color: #f4f4f4;
 }
 
-/* --Footer-- */
 
+
+
+/* --Footer-- */
 
 .footer {
   display: flex;
