@@ -101,7 +101,7 @@ h1, h2 {
 
 .navbar ul li a {
   color: #fff;
-  padding: 0 10px;
+  padding: 7px 10px;
   margin: 0px 0px;
   border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
@@ -111,7 +111,7 @@ h1, h2 {
 .navbar ul li a:hover {
   cursor: pointer;
   color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .navbar ul li:hover {
@@ -143,6 +143,7 @@ h1, h2 {
   float: left;
   text-align: center; 
   padding: 4px;
+  width: 100%;
   border-bottom: 2px transparent;
 }
 
@@ -440,12 +441,12 @@ h1, h2 {
   text-align: center;
   border-top: 1px dotted var(--primary-color);
   padding-top: 15px;
+  line-height: 1.8;
 }
 
 .footer .social-icons {
   margin-bottom: 1rem;
   opacity: 0.8;
-  border: 1px #fff solid;
 } 
 
 .footer .social-icons a {
@@ -458,8 +459,11 @@ h1, h2 {
 }
 
 #footer .bottom-text {
-  padding-top: 1rem;
+  text-align: center;
   width: 400px;
-  border: 1px #fff solid;
+}
+
+#footer .bottom-text a:hover {
+ color: var(--primary-color)
 }
 
