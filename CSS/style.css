@@ -271,7 +271,8 @@ h1, h2 {
 }
 
 .contact-container p {
-  font-style: uppercase;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .contact-container .email {
@@ -303,21 +304,22 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-.name-input {grid-area: name;}
-.subject-input {grid-area: subject;}
-.email-input {grid-area: email;}
-.phone-input {grid-area: phone;}
-.message-input {
-  grid-area: message;
-  height: 200px;
-}
-
 #contact .text-input {
   font-family: 'Epilogue', sans-serif;
   font-size: 1.2rem;
   padding: 6px;
   border: none;
   border-radius: 3px;
+}
+
+.name-input {grid-area: name;}
+.subject-input {grid-area: subject;}
+.email-input {grid-area: email;}
+.phone-input {grid-area: phone;}
+.message-input {
+  padding: 0;
+  grid-area: message;
+  height: 200px;
 }
 
 #contact .submit-btn {
@@ -447,6 +449,7 @@ h1, h2 {
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
+  text-transform: uppercase;
   text-align: center;
   border-top: 1px dotted var(--primary-color);
   padding: 15px 0;
