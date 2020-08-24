@@ -27,7 +27,7 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2 {
   font-family: 'Rock Salt', cursive;
   margin: 0;
 }
@@ -170,6 +170,13 @@ h1, h2, h3, h4 {
 
 .hero .hero-social a {
   color: var(--primary-color);
+  padding-bottom: 10px;
+  border-bottom: 1px transparent;
+}
+
+.hero .hero-social a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 /* --Bio/about-- */
@@ -194,7 +201,7 @@ h1, h2, h3, h4 {
     float:right;
     text-align: left;
     padding: 15px 40px;
-    margin-top: 215px;
+    margin-top: 210px;
   }
   
   .education .content h1{
@@ -229,7 +236,7 @@ h1, h2, h3, h4 {
     color: var(--primary-color);
     font-size: 1.5rem;
     margin: auto;
-    padding: 5px;
+    padding: 4px;
     border: 2px transparent;
     width: 200px;
     transition: all var(--fade-speed) ease-in-out;
@@ -351,7 +358,12 @@ h1, h2, h3, h4 {
 }
 
 .contact-container h2 {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
+}
+
+.contact-container .email a {
+  color: var(--primary-color);
+  margin-bottom: 15px;
 }
 
 #contact .text-fields {
