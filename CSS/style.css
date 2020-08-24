@@ -414,13 +414,13 @@ h1, h2 {
   cursor: pointer;
   background: transparent;
   color: var(--primary-color);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   border: none;
   border: 2px solid var(--primary-color);
   border-radius: 3px;
   margin: auto;
-  padding: 10px;
-  width: 30%;
+  padding: 5px;
+  width: 200px;
   transition: all var(--fade-speed) ease-in-out;
 }
 
@@ -434,19 +434,23 @@ h1, h2 {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
+  border-top: 1px dotted var(--primary-color);
+  padding-top: 15px;
 }
 
 .footer .social-icons {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  border: 1px #fff solid;
 } 
 
 .footer .social-icons a {
   color: var(--primary-color);
-  padding: 1rem;
+  padding: 1rem 1rem 10px 1rem;
 }
 
 .footer .social-icons a:hover {
@@ -454,6 +458,8 @@ h1, h2 {
 }
 
 #footer .bottom-text {
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  width: 400px;
+  border: 1px #fff solid;
 }
 
