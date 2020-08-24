@@ -201,7 +201,7 @@ h1, h2 {
   position: relative;
   background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
   padding: 1rem;
   }
 
@@ -219,9 +219,9 @@ h1, h2 {
     position: relative;
     text-align: left;
     padding: 10px 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 250px;
+    top: 150px;
+    width: 850px;
   }
   
   .education .content h1{
@@ -242,7 +242,7 @@ h1, h2 {
     max-width: 850px;
   }
 
-  .education .content .blurb p {
+  .education .content p {
     color: #f4f4f4;
     text-shadow:
       -1px -1px 0 #000,
