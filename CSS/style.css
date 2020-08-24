@@ -276,6 +276,7 @@ h1, h2 {
 }
 
 .contact-container .email {
+  text-transform: uppercase;
   color: var(--primary-color);
   opacity: 0.9;
   width: 300px;
@@ -424,21 +425,22 @@ h1, h2 {
 }
 
 #photos .photo-grid {
-  position: absolute;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap:1rem;
-  top: 20%;
+  padding: 2rem;
 } 
 
-#photos .photo-grid .photo img{
+#photos .photo-grid .photo img {
   height: 300px;
+  width: 300px;
+  border-radius: 50%;
   border: 1px dotted var(--primary-color);
 }
 
 #photos .photo-grid .photo img:hover{
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
   border-bottom: 1px solid var(--primary-color);
 }
 
