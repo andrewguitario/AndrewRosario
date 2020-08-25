@@ -137,7 +137,7 @@ h1, h2 {
   background-color: var(--bg-color);
   opacity: 0.9;
   padding: 7px 0 5px 0;
-
+  z-index: 2;
 }
 
 .navbar ul li:hover ul li {
@@ -217,8 +217,8 @@ h1, h2 {
   .education-container .content {
     position: absolute;
     text-align: center;
-    left:25%;
-    top: 150px;
+    left:0;
+    top:0;
     height:100%;
     width: 70%;
     z-index: 2;
@@ -284,6 +284,10 @@ h1, h2 {
 
 #contact {
   margin-bottom: 20px;
+}
+
+#contact .contact {
+  position: relative;
 }
 .contact-container {
   padding: 1rem 7rem;
