@@ -217,7 +217,7 @@ h1, h2 {
   .education-container .content {
     position: absolute;
     text-align: center;
-    left: 30%;
+    left: 25%;
     top: 20%;
     height:100%;
     width: 70%;
@@ -306,15 +306,20 @@ h1, h2 {
 
 .contact-container .email {
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-color);
   opacity: 0.9;
   width: 300px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 15px auto; 
 }
 
-.contact-container .email a{
+.contact-container .email > div  h3 {
+  margin-right: 200px;
+}
+
+.contact-container .email a {
   color: var(--medium-color);
-  margin-bottom: 15px;
+  margin-bottom: 0 auto 15px 0;
   transition: all var(--fade-speed) ease-in-out;
 }
 
