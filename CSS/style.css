@@ -480,6 +480,17 @@ h1, h2 {
   border-bottom: 1px solid var(--primary-color);
 }
 
+/* Education Page */
+#ed-intro .lessons-container {
+  padding: 2rem;
+}
+
+#ed-intro .lessons-container .section-a {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
 /* --Footer-- */
 
 .footer {
@@ -487,6 +498,7 @@ h1, h2 {
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
+  height: 100px;
   text-transform: uppercase;
   text-align: center;
   border-top: 1px dotted var(--primary-color);
