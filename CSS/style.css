@@ -480,16 +480,29 @@ h1, h2 {
   border-bottom: 1px solid var(--primary-color);
 }
 
-/* Education Page */
+/*______ Education Page______ */
 #ed-intro .lessons-container {
   padding: 2rem;
+  height: 90vh;
 }
 
 #ed-intro .lessons-container .section-a {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 
+.lessons-blurb {
+  grid-column: 1 / span 3;
+}
+
+.student-portal {
+  grid-column: 4/ span 1;
+  border-left: 2px solid var(--primary-color);
+  padding: 1rem;
+}
+
+.login label {
+  display: block;
+}
 
 /* --Footer-- */
 
@@ -498,7 +511,8 @@ h1, h2 {
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
-  height: 100px;
+  height: 80px;
+  width: 100%;
   text-transform: uppercase;
   text-align: center;
   border-top: 1px dotted var(--primary-color);
