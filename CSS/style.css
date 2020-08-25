@@ -481,9 +481,10 @@ h1, h2 {
 }
 
 /*______ Education Page______ */
-#ed-intro .lessons-container {
+.lessons-container {
   padding: 2rem;
-  height: 90vh;
+  height: 80vh;
+  width: 100%;
 }
 
 #ed-intro .lessons-container .section-a {
