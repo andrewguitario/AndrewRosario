@@ -500,7 +500,7 @@ h1, h2 {
 .student-portal {
   grid-column: 4/ span 1;
   border-left: 1px dotted var(--primary-color);
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .student-portal .login {
