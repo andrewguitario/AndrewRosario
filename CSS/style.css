@@ -548,8 +548,15 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+.online-info h3 i {
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+}
+
 .online-info p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 
