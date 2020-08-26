@@ -539,6 +539,15 @@ h1, h2 {
   width: 100%;
 }
 
+.online-header h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.online-header {
+  padding: 1.5rem;
+}
+
 .online-lessons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -550,6 +559,11 @@ border-left: 1px dotted var(--font-color);
 margin-top: 40px;
 padding: 10px 30px;
 }
+
+.online-info:last-child {
+  border-right: 1px dotted var(--font-color);
+}
+
 
 .online-info h3 {
   margin-bottom: 12px;
