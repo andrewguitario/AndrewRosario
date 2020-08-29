@@ -18,6 +18,7 @@
   <!-- CSS Style Sheets -->
   <link rel="stylesheet" href="CSS/lightbox.min.css">
   <link rel="stylesheet" href="CSS/style.css">
+
   <title>Andrew Rosario Music</title>
 </head>
 
@@ -41,9 +42,9 @@
               <li><a href="#bio">Bio</a></li>
               <li><a href="media.html">Media <i class="fas fa-caret-down"></i></a>
                 <ul>
-                  <li><a href="media.html#video1">Video</a></li>
-                  <li><a href="media.html#audio1">Audio</a></li>
-                  <li><a href="media.html#photo1">Photo</a></li>
+                  <li><a href="media.html#video">Video</a></li>
+                  <li><a href="media.html#audio">Audio</a></li>
+                  <li><a href="media.html#photos">Photo</a></li>
                 </ul> 
               </li>
               <li><a href="education.html">Education</a></li>             
@@ -211,20 +212,6 @@ integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="ano
 <script src="js/lightbox.min.js"></script>
 <script src="js/lightbox.js"></script>
 
-<!-- Smooth scrolling imported -->
-<script>
-$('a[href*="#"]').on('click', function (e) {
-  e.preventDefault()
-
-  $('html, body').animate(
-    {
-      scrollTop: $($(this).attr('href')).offset().top,
-    },
-    700,
-    'linear'
-  )
-})
-</script>
 
 </body>
 </html>
