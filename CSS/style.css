@@ -5,6 +5,9 @@
   --font-color: #f4f4f4;
   --bg-color: #191919;
   --fade-speed: 0.5s;
+  /* youtoube w=560 h=315 */
+  --video-width: 560px;
+  --video-height: 315px;
 }
 
 * {
@@ -83,7 +86,7 @@ h1, h2 {
   padding-left: 10px;
  }
 
- .navbar .logo img{
+ .navbar .logo img {
   height: 45%;
   width: 45%;
 }
@@ -139,7 +142,7 @@ h1, h2 {
   background-color: var(--bg-color);
   opacity: 0.9;
   padding: 7px 0 5px 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .navbar ul li:hover ul li {
@@ -153,10 +156,11 @@ h1, h2 {
 }
 
 /* -----HOME PAGE----- */
+
 /* Hero Image */
 
 .hero {
-  display: flex;
+  position: relative;
   background: url('../img/rosario-electric-brickwall-hero-04.jpg') no-repeat center center/cover;
   height: 100vh;
   max-width: 100%;
@@ -178,12 +182,14 @@ h1, h2 {
 }
 
 .hero .hero-social a {
+  cursor: pointer;
   color: var(--primary-color);
   padding-bottom: 10px;
   border-bottom: 1px transparent;
 }
 
 .hero .hero-social a:hover {
+  cursor: pointer;
   color: var(--medium-color);
   border-bottom: 1px solid var(--primary-color);
 }
@@ -199,37 +205,24 @@ h1, h2 {
 
 /* --teaching-- */
 
-.education-container {
+#education .education-container {
   display: flex;
-  background: url('../img/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
-  height: 100vh;
+  align-items: center;
+  justify-items: center;
+  background: url('../img/hero_IMG/rosario-acoustic-BW-hero-02.jpg') no-repeat center center/cover;
+  /* height: 700px; */
   width: 100%;
-  top: 0;
-  left: 0;
+  padding-top: 200px;
   }
-
-/* .education-container::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.5);
-  }
-   */
    
   .education-container .content {
-    float:right;
     text-align: center;
-    left: 25%;
-    top: 20%;
-    height:100%;
-    width: 70%;
-    z-index: 2;
+    width: 800px;
+    margin-left: 40%;
+    padding: 2rem;
   }
   
-  .education-container .content h1{
+  .education-container .content h1 {
     text-align: center;
     font-size: 3rem;
     color: var(--font-color);
@@ -257,7 +250,6 @@ h1, h2 {
     color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 400;
-    
     border: 2px transparent;
     width: 200px;
     text-shadow: 
@@ -418,15 +410,22 @@ h1, h2 {
 }
 
 /* -- Video-- */
+.video-container {
+  padding: 0 10px;
+}
 .video-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 0 auto;
   padding-top: 50px;
 }
 
-.iframe-container{
+.video-size {
+  width: var(--video-width);
+  height: var(--video-height);
+}
+/* .iframe-container{
   position: relative;
   width: 100%;
   padding-bottom: 56.25%; 
@@ -434,13 +433,13 @@ h1, h2 {
   margin: 20px;
 }
 
-.iframe-container iframe{
+.iframe-container iframe {
   position: absolute;
   top:0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 /* --Audio-- */
 #audio .audio-container {
@@ -458,8 +457,6 @@ h1, h2 {
 /* --Photos-- */
 
 #photos .photo-container {
-  position: relative;
-  height: 90vh;
   padding: 1rem;
 }
 
@@ -467,10 +464,8 @@ h1, h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  border: 1px solid #fff;
   width: 80%;
-  margin: auto;
-
+  margin: 2rem auto;
 } 
 
 #photos .photo-grid .photo img {
@@ -479,16 +474,16 @@ h1, h2 {
   border: 1px dotted var(--primary-color);
 }
 
-#photos .photo-grid .photo img:hover{
+#photos .photo-grid .photo img:hover {
   cursor: pointer;
   opacity: 0.7;
   border-bottom: 1px solid var(--primary-color);
 }
 
 /*______ Education Page______ */
+/* section A */
 .lessons-container {
   padding: 2rem;
-  height: 80vh;
   width: 100%;
 }
 
@@ -523,6 +518,7 @@ h1, h2 {
   padding: 4px;
   width: 200px;
 }
+
 .lessons-btn {
   cursor: pointer;
   background: transparent;
@@ -542,8 +538,8 @@ h1, h2 {
   color: var(--light-color);
 }
 
+/* section B */
 #online {
-  /* height: 150vh; */
   width: 100%;
 }
 
@@ -564,15 +560,15 @@ h1, h2 {
 
 .online-info {
 border-left: 1px dotted var(--font-color);
-height: 650px;
+height: 550px;
 margin-top: 40px;
+margin-bottom: 40px;
 padding: 10px 30px;
 }
 
 .online-info:last-child {
   border-right: 1px dotted var(--font-color);
 }
-
 
 .online-info h3 {
   margin-bottom: 12px;
@@ -604,6 +600,7 @@ padding: 10px 30px;
   flex-direction: row;
   align-content: center;
   justify-content: space-evenly;
+  margin-top: 10px;  
   height: 80px;
   width: 100%;
   text-transform: uppercase;
