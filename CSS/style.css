@@ -71,11 +71,11 @@ h1, h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.2);
   /* border-bottom: 1px dotted var(--primary-color); */
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 55px;
   opacity: 1;
   z-index: 4;
 }
@@ -92,7 +92,7 @@ h1, h2 {
 }
 
 .navbar .menu {
-  margin-top: 30px;
+  margin-top: 10px;
   padding-right: 10px;
 }
 
@@ -107,7 +107,7 @@ h1, h2 {
 
 .navbar ul li a {
   color: #fff;
-  padding: 7px 10px;
+  padding: 10px 10px;
   margin: 0px 0px;
   border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
@@ -116,7 +116,9 @@ h1, h2 {
 
 .navbar ul li a:hover {
   cursor: pointer;
-  color: var(--primary-color);
+  color: var(--medium-color);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 3px;
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -139,9 +141,11 @@ h1, h2 {
   display: block;
   position: absolute;
   float: left;
-  background-color: var(--bg-color);
-  opacity: 0.9;
-  padding: 7px 0 5px 0;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 3px;
+  opacity: 1;
+  margin-top: 3px;
+  padding: 8px 0 5px 0;
   z-index: 3;
 }
 
@@ -217,8 +221,8 @@ h1, h2 {
    
   .education-container .content {
     text-align: center;
-    width: 800px;
-    margin-left: 40%;
+    width: 900px;
+    margin-left: 35%;
     padding: 2rem;
   }
   
@@ -236,7 +240,7 @@ h1, h2 {
   .education-container .content p {
     text-align: left;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--font-color);
     /* text-shadow:
       -1px -1px 0 #000,
@@ -245,35 +249,36 @@ h1, h2 {
       1px 1px 0 #000; */
   }
   
-  .education-container .content a {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: 400;
-    border: 2px transparent;
-    width: 200px;
-    text-shadow: 
+  .education-container .content .learn-btn {
+    cursor: pointer;
+    color: var(--light-color);
+    font-size: 1.3rem;
+    width: 500px;
+    background: rgba(0,0,0,0.4);
+    border: 2px solid var(--light-color);
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 7px;
+    /* text-shadow: 
     -1px -1px 0 #191919,
     1px -1px 0  #191919,
     -1px 1px 0  #191919,
-    1px 1px 0  #191919;
+    1px 1px 0  #191919; */
     transition: all var(--fade-speed) ease-in-out;
   }
-  
-  .education-container .content a:hover {
-    color: var(--medium-color);
-    border-bottom: 2px solid var(--primary-color);
+
+  .learn-btn-wrap {
+    margin-top: 1rem;
   }
 
-  .education-container .overlay {
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+
+  .education-container .content a:hover {
+    color: var(--medium-color);
+    border: 2px solid var(--primary-color);
   }
+
+
+
 
 
 
@@ -351,7 +356,7 @@ h1, h2 {
 .message-input {
   padding: 0;
   grid-area: message;
-  height: 200px;
+  height: 300px;
 }
 
 #contact .submit-btn {
