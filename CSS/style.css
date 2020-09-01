@@ -60,7 +60,7 @@ h1, h2 {
 }
 
 .section-padding {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 /* -- NavBar-- */
@@ -87,6 +87,7 @@ h1, h2 {
  }
 
  .navbar .logo img {
+   margin-top: 5px;
   height: 45%;
   width: 45%;
 }
@@ -107,7 +108,7 @@ h1, h2 {
 
 .navbar ul li a {
   color: #fff;
-  padding: 10px 10px;
+  padding: 18px 10px 10px 10px;
   margin: 0px 0px;
   border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
@@ -144,7 +145,7 @@ h1, h2 {
   background-color: rgba(0,0,0,0.4);
   border-radius: 3px;
   opacity: 1;
-  margin-top: 3px;
+  margin-top: 5px;
   padding: 8px 0 5px 0;
   z-index: 3;
 }
@@ -154,9 +155,13 @@ h1, h2 {
   float: left;
   text-align: center; 
   margin-bottom: 3px;
-  padding: 4px;
+  padding: 2px 4px;
   width: 100%;
   border-bottom: 2px transparent;
+}
+
+.navbar ul li:hover ul li a{
+  padding: 13px 12px 6px 12px;
 }
 
 /* -----HOME PAGE----- */
@@ -165,7 +170,7 @@ h1, h2 {
 
 .hero {
   position: relative;
-  background: url('../img/hero_IMG/rosario-electric-brickwall-hero-04-overlay.jpg') no-repeat center center/cover;
+  background: url('../img/hero_IMG/header-hero-brickwall-gadient.jpg') no-repeat center center/cover;
   height: 100vh;
   max-width: 100%;
 }
@@ -222,7 +227,7 @@ h1, h2 {
   .education-container .content {
     text-align: center;
     width: 900px;
-    margin-left: 35%;
+    margin-left: 30%;
     padding: 2rem;
   }
   
@@ -286,11 +291,13 @@ h1, h2 {
 
 #contact {
   margin-bottom: 20px;
+  padding-top: 2rem;
 }
 
 #contact .contact {
   position: relative;
 }
+
 .contact-container {
   padding: 1rem 7rem;
   margin: auto;
@@ -382,33 +389,41 @@ h1, h2 {
 /* --Media Icon Menu-- */
 
 .media-menu {
-  position: relative;
   display: flex;
   height: 100vh;
+  align-content: center;
   justify-content: center;
 }
 
-.media-icons {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-gap: 7rem;  
-  padding: 1rem;
-  top: 40%;
+.media-menu .media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem;
 }
 
-#media .icons {
+.media-menu .media-icons .icons {
+  color: var(--primary-color);
+  height: 140px;
   opacity: 0.9;
   padding: 1rem;
   text-align: center;
-  border: 2px transparent;
+  border: transparent;
   transition: border var(--fade-speed) ease-in-out;
 }
-#media .icons a {
+
+.media-icons .icons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 3rem;
+}
+
+.media-menu .media-icons .icons a {
   color: var(--primary-color);
 }
 
-#media .icons:hover {
+.media-menu .media-icons .icons:hover {
   cursor: pointer;
   border-top: 2px solid var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
@@ -485,7 +500,9 @@ h1, h2 {
   border-bottom: 1px solid var(--primary-color);
 }
 
+
 /*______ Education Page______ */
+
 /* section A */
 .lessons-container {
   padding: 2rem;
@@ -544,8 +561,16 @@ h1, h2 {
 }
 
 /* section B */
+
 #online {
   width: 100%;
+}
+
+.lessons-images img {
+  height: 100%;
+  width: 100%;
+  margin-top: 4rem;
+  padding-top: 2rem;
 }
 
 .online-header h2 {
