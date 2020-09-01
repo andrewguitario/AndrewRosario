@@ -114,7 +114,6 @@ h1, h2 {
   transition: all var(--fade-speed) ease-in-out;
 }
 
-
 .navbar ul li a:hover {
   cursor: pointer;
   color: var(--medium-color);
@@ -169,8 +168,8 @@ h1, h2 {
 /* Hero Image */
 
 .hero {
-  position: relative;
-  background: url('../img/hero_IMG/header-hero-brickwall-gadient.jpg') no-repeat center center/cover;
+  /* position: relative; */
+  background: url('../img/hero_IMG/hero-standing-nav.jpg') no-repeat center center/cover;
   height: 100vh;
   max-width: 100%;
 }
@@ -187,7 +186,7 @@ h1, h2 {
   grid-template-columns: repeat(3,1fr);
   grid-gap: 3rem;
   bottom: 50px;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .hero .hero-social a {
@@ -390,14 +389,16 @@ h1, h2 {
 
 .media-menu {
   display: flex;
+  background: url('../img/hero_IMG/rosario-electric-brickwall-hero-04-overlay.jpg')no-repeat center center/cover;
   height: 100vh;
+  max-width: 100%;
   align-content: center;
   justify-content: center;
 }
 
 .media-menu .media-icons {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100%;
   padding: 1rem 1rem;
@@ -416,7 +417,7 @@ h1, h2 {
 .media-icons .icons-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
-  grid-gap: 3rem;
+  grid-gap: 4rem;
 }
 
 .media-menu .media-icons .icons a {
