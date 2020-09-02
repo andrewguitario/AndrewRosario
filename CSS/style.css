@@ -648,7 +648,7 @@ padding: 10px 30px;
 
 .footer .social-icons a {
   color: var(--primary-color);
-  padding: 1rem 1rem 10px 1rem;
+  padding: 1rem 10px 10px 10px;
 }
 
 .footer .social-icons a:hover {
