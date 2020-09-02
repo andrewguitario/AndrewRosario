@@ -100,7 +100,7 @@ h1, h2 {
 .navbar ul li {
   display: inline-block;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-right: 5px;
   border-bottom: 2px transparent;
   transition: all var(--fade-speed) ease-in-out;
@@ -432,6 +432,7 @@ h1, h2 {
 
 /* -- Video-- */
 .video-container {
+  margin-top: 2rem;
   padding: 0 10px;
 }
 .video-items {
@@ -563,6 +564,12 @@ h1, h2 {
 
 /* section B */
 
+.online-lessons-container {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  padding-bottom: 2rem;
+}
+
 #online {
   width: 100%;
 }
@@ -570,7 +577,7 @@ h1, h2 {
 .lessons-images img {
   height: 100%;
   width: 100%;
-  margin-top: 4rem;
+  margin: 2rem 0 2rem 0;
   padding-top: 2rem;
 }
 
@@ -580,13 +587,15 @@ h1, h2 {
 }
 
 .online-header {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 1rem 1.5rem;
 }
 
 .online-lessons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .online-info {
