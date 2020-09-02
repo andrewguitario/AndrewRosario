@@ -389,7 +389,8 @@ h1, h2 {
 
 .media-menu {
   display: flex;
-  background: url('../img/hero_IMG/rosario-electric-brickwall-hero-04-overlay.jpg')no-repeat center center/cover;
+  background: url('../img/hero_IMG/hero-brickwall-gadient.jpg')no-repeat 
+  center center/cover;
   height: 100vh;
   max-width: 100%;
   align-content: center;
@@ -464,7 +465,7 @@ h1, h2 {
 } */
 
 /* --Audio-- */
-#audio .audio-container {
+/* #audio .audio-container {
   position: relative;
   text-align: center;
   height: 90vh;
@@ -473,7 +474,7 @@ h1, h2 {
 #audio i {
   color: var(--primary-color);
   margin-top: 25vh;
-}
+} */
 
 
 /* --Photos-- */
