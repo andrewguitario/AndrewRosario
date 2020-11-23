@@ -4,9 +4,6 @@
 }
 
 @media(max-width: 600px) {
- body {
-   
- }
 
  .navbar {
    position: fixed;
@@ -19,7 +16,8 @@
 
  .navbar ul li {
    font-size: 1.2rem;
-   margin-right: auto;
+   margin-right: none;
+   margin: auto;
  }
 
  .navbar .menu {
@@ -89,8 +87,39 @@
 
 #contact .submit-btn {
  width: 100%;
-
 }
+
+/* Education - MOBILE - SMART phones */
+.lessons-container {
+  padding: 0;
+}
+
+.lessons-container .section-a {
+  /* border: 1px dotted var(--primary-color); */
+}
+
+#ed-intro .lessons-container .section-a {
+  display: flex;
+  flex-direction: column;  
+}
+
+.lessons-blurb h2 {
+  text-align: center;
+}
+
+.lessons-btn {
+  font-size: 1.3rem;
+  margin: 2px 2px;
+  padding: 5px;
+  width: 100%;
+}
+
+.student-portal {
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+
 
 /* FOOTER - MOBILE - SMART */
 
