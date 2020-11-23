@@ -1,0 +1,111 @@
+@media(max-width:900px) {
+  
+
+}
+
+@media(max-width: 600px) {
+ body {
+   
+ }
+
+ .navbar {
+   position: fixed;
+   max-width: 100%;
+ }
+
+ .navbar .logo {
+   display: none;
+ }
+
+ .navbar ul li {
+   font-size: 1rem;
+   margin-right: auto;
+ }
+
+ .navbar .menu {
+  margin-top: 10px;
+  padding-right: 0px;
+}
+
+/* BIO - MOBILE - Smart Phone */
+.bio-text {
+  padding: 20px 20px;
+}
+/* Home - Education - MOBILE - SMART phone */
+
+#education .education-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background: var(--bg-color);
+  width: 100%;
+  padding-top: 50px;
+  }
+
+  .education-container .content {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    padding: 20px;
+  }
+
+  .education-container .content h1 {
+    font-size: 2rem;
+  }
+
+  .education-container .content p {
+    font-weight: 300;
+  }
+
+  /* Contact Form MOBILE SMART PHONE */
+
+  .contact-container {
+    padding: 1rem 1rem;
+    margin: auto;
+    text-align: left;
+  }
+
+  .contact-container .email {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    opacity: 0.9;
+    width: 100%;
+    margin: 0 auto 15px auto; 
+  }
+
+ #contact .text-fields {
+  display: grid;
+  grid-template-areas:
+  'name'
+  'email'
+  'subject' 
+  'phone'
+  'message';
+  grid-gap: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#contact .submit-btn {
+ width: 100%;
+
+}
+
+/* FOOTER - MOBILE - SMART */
+
+.footer {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 10px;  
+  height: 80px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 1px dotted var(--primary-color);
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  line-height: 1.8;
+}
+}
