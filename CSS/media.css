@@ -1,4 +1,4 @@
-@media(max-width:900px) {
+@media(max-width: 900px) {
   
 
 }
@@ -7,8 +7,8 @@
  .navbar {
    position: fixed;
    max-width: 100%;
-   padding: 0 0;
-   background: rgba(0, 0, 0, 0.5);
+   padding: 0 2px;
+   background: rgba(0, 0, 0, 0.6);
  }
 
  .navbar .logo {
@@ -36,6 +36,19 @@
   padding: 20px 20px;
 }
 
+/* LESSONS BLURB on HOME */
+.education-container .content .learn-btn {
+  width: 90%;
+  padding: 7px 29%;
+}
+
+.learn-btn-wrap a {
+  width: 100%;
+}
+.learn-btn-wrap {
+  padding: 10px 0;
+  width: 100%;
+}
 
 /* MEDIA - MOBILE - SMART PHONES */
 
