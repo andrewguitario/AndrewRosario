@@ -38,14 +38,17 @@
 
 /* LESSONS BLURB on HOME */
 .education-container .content .learn-btn {
+  background-color: var(--bg-color);
   width: 90%;
   padding: 7px 29%;
 }
 
 .learn-btn-wrap a {
+  background-color: var(--bg-color);
   width: 100%;
 }
 .learn-btn-wrap {
+  background-color: var(--bg-color);
   padding: 10px 0;
   width: 100%;
 }
