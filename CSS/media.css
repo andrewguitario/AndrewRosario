@@ -4,15 +4,20 @@
 }
 
 @media(max-width: 600px) {
-
  .navbar {
    position: fixed;
    max-width: 100%;
+   padding: 0 0;
  }
 
  .navbar .logo {
    display: none;
  }
+
+ .navbar .bio {
+  display: none;
+}
+
 
  .navbar ul li {
    font-size: 1.2rem;
@@ -47,13 +52,13 @@
 
 .video-size {
   width: 100%;
-  height: var(--video-height);
+  height: 100%;
 }
 
 #photos .photo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 7px;
+  grid-gap: 10px;
   width: 90%;
   margin: 1.3rem auto;
 } 
@@ -209,6 +214,9 @@
 
 
 /* FOOTER - MOBILE - SMART */
+#footer {
+  padding-bottom: 70px;
+}
 
 .footer {
   display: grid;
@@ -224,4 +232,5 @@
   padding: 15px 0;
   line-height: 1.8;
 }
+
 }
