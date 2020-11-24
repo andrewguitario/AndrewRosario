@@ -90,8 +90,9 @@ h1, h2 {
   padding-left: 10px;
  }
 
+
  .navbar .logo img {
-   margin-top: 5px;
+  margin-top: 5px;
   height: 45%;
   width: 45%;
 }
@@ -262,32 +263,25 @@ h1, h2 {
     color: var(--light-color);
     font-size: 1.3rem;
     width: 500px;
-    background: rgba(0,0,0,0.4);
+    background: var(--bg-color);
     border: 2px solid var(--light-color);
     border-radius: 3px;
     margin: 10px auto;
     padding: 7px;
-    /* text-shadow: 
-    -1px -1px 0 #191919,
-    1px -1px 0  #191919,
-    -1px 1px 0  #191919,
-    1px 1px 0  #191919; */
     transition: all var(--fade-speed) ease-in-out;
   }
 
   .learn-btn-wrap {
+    background-color: var(--bg-color);
     margin-top: 1rem;
   }
 
 
   .education-container .content a:hover {
+    background-color: var(--bg-color);
     color: var(--medium-color);
     border: 2px solid var(--primary-color);
   }
-
-
-
-
 
 
 /* --Contact Form-- */
@@ -440,6 +434,7 @@ h1, h2 {
   margin-top: 2rem;
   padding: 0 10px;
 }
+
 .video-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -452,33 +447,7 @@ h1, h2 {
   width: var(--video-width);
   height: var(--video-height);
 }
-/* .iframe-container{
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; 
-  height: 0;
-  margin: 20px;
-}
 
-.iframe-container iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-/* --Audio-- */
-/* #audio .audio-container {
-  position: relative;
-  text-align: center;
-  height: 90vh;
-  padding: 1rem;
-}
-#audio i {
-  color: var(--primary-color);
-  margin-top: 25vh;
-} */
 
 
 /* --Photos-- */
@@ -633,8 +602,6 @@ padding: 10px 30px;
   font-size: 1rem;
   line-height: 1.3;
 }
-
-
 
 
 
