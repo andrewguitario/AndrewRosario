@@ -33,6 +33,10 @@
 
 /* MEDIA - MOBILE - SMART PHONES */
 
+.video-container {
+  margin-top: 2.3rem;
+  padding: 0 10px;
+}
 .video-items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -44,6 +48,21 @@
 .video-size {
   width: 100%;
   height: var(--video-height);
+}
+
+#photos .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7px;
+  width: 90%;
+  margin: 1.3rem auto;
+} 
+
+
+#photos .photo-grid .photo img {
+  height: 95%;
+  width: 95%;
+  border: 1px dotted var(--primary-color);
 }
 
 
