@@ -8,6 +8,9 @@
   /* youtoube w=560 h=315 */
   --video-width: 560px;
   --video-height: 315px;
+  /* youtoube WIDE - mobile - ipad */
+  --video-width-tablet: 100%;
+  --video-height-tablet: 100%;
 }
 
 * {
