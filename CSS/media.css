@@ -386,3 +386,20 @@
 }
 
 }
+
+/* Smaller Smart Phoes */
+@media(max-width: 330px) {
+  .navbar {
+    position: fixed;
+    max-width: 100%;
+    padding: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    font-size: 1rem;
+    margin-right: none;
+    margin: auto;
+  }
+}
