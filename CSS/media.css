@@ -112,8 +112,9 @@
  .navbar {
    position: fixed;
    max-width: 100%;
-   padding: 0 0;
+   padding: 0 0 0 0;
    background: rgba(0, 0, 0, 0.6);
+   justify-content: center;
  }
 
  .navbar .logo {
@@ -126,13 +127,13 @@
 
 
  .navbar ul li {
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    margin-right: none;
    margin: auto;
  }
 
  .navbar ul li a {
-  padding: 19px 7px 12px 9px;
+  padding: 19px 7px 12px 7px;
  }
 
  .navbar .menu {
