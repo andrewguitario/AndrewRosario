@@ -141,6 +141,22 @@
   padding-right: 0px;
 }
 
+.hero .hero-social {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3rem;
+  bottom: 20px;
+  opacity: 1;
+}
+
+.hero .hero-social a {
+  cursor: pointer;
+  color: var(--primary-color);
+  padding-bottom: 2px;
+  border-bottom: 1px transparent;
+}
+
 .hero {
   /* position: relative; */
   background: url('../img/mobile_IMG/hero-standing-center-mobile.jpg') no-repeat center center/cover;
