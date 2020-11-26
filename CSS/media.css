@@ -291,8 +291,14 @@
 }
 .lessons-btn {
   font-size: 1.3rem;
-  margin: 2px 2px;
+  margin: 0 0;
   padding: 5px;
+  width: 100%;
+}
+
+.try-lesson-wrap {
+  display: flex;
+  padding: 0 0;
   width: 100%;
 }
 
@@ -388,7 +394,7 @@
 }
 
 /* Smaller Smart Phoes */
-@media(max-width: 330px) {
+@media(max-width: 360px) {
   .navbar {
     position: fixed;
     max-width: 100%;
@@ -401,5 +407,121 @@
     font-size: 1rem;
     margin-right: none;
     margin: auto;
+  }
+
+  .navbar ul li a {
+    padding: 19px 7px 12px 7px;
+   }
+
+   .lessons-btn {
+    font-size: 1.1rem;
+    margin: 0 0;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .try-lesson-wrap {
+    display: flex;
+    padding: 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* really small smart phones */
+@media(max-width: 300px) {
+  body p {
+    font-size: 14px;
+  }
+
+  body h1, h2 {
+    font-size: 1.1;
+  }
+
+  .navbar {
+    position: fixed;
+    max-width: 100%;
+    padding: 0 0 0 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    font-size: 14px;
+    margin-right: none;
+    margin: auto;
+  }
+
+  .navbar ul li a {
+    padding: 19px 7px 12px 7px;
+  }
+
+ .headers {
+    font-size: 1.1rem;
+  }
+
+  .education-container .content p {
+    font-size: 14px;
+  }
+
+  .learn-btn-wrap {
+    display: flex;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .education-container .content .learn-btn {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.3rem;
+  }
+  .contact-container .email {
+    font-size: 12px;
+  }
+
+  .media-icons .icons a {
+    display: none;
+  }
+
+  .lessons-blurb h2 {
+    font-size: 1.1rem;
+  }
+
+  .lessons-blurb p {
+    font-size: 14px;
+  }
+
+  .student-portal h2 {
+    font-size: 1.1rem;
+  }
+
+  #online .lead {
+    font-size: 14px;
+  }
+
+  .online-header h2{
+    font-size: 1.1rem;
+  }
+
+  .lessons-btn {
+    font-size: 11px;
+    margin: 0 0;
+    padding: 2px;
+    width: 100%;
+  }
+  
+  .try-lesson-wrap {
+    display: flex;
+    padding: 0 0;
+    width: 100%;
+  }
+
+  .online-info .fa-3x {
+    border: none;
+    font-size: 4rem;
+    padding: 3px 3px;
   }
 }
