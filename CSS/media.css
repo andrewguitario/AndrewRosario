@@ -146,7 +146,7 @@
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 3rem;
-  bottom: 20px;
+  bottom: 5px;
   opacity: 1;
 }
 
