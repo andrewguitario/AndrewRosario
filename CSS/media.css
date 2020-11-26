@@ -141,6 +141,11 @@
   padding-right: 0px;
 }
 
+.hero {
+  /* position: relative; */
+  background: url('../img/mobile_IMG/hero-standing-center-mobile.jpg') no-repeat center center/cover;
+}
+
 /* BIO - MOBILE - Smart Phone */
 .bio-text {
   padding: 20px 20px;
@@ -164,11 +169,20 @@
 }
 
 /* MEDIA - MOBILE - SMART PHONES */
+.media-menu {
+  background: url('../img/mobile_IMG/hero-brickwall-gradient-mobile.jpg')no-repeat 
+  center center/cover;
+}
 
+.media-menu .media-icons .icons {
+  font-size: 0.7rem;
+  padding-top: 60px;
+}
 .video-container {
   margin-top: 2.3rem;
   padding: 0 10px;
 }
+
 .video-items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -196,9 +210,6 @@
   width: 95%;
   border: 1px dotted var(--primary-color);
 }
-
-
-
 
 
 /* Home - Education - MOBILE - SMART phone */
